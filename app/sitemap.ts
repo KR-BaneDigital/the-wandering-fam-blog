@@ -5,7 +5,8 @@
  * Reads from blog-data.ts to always stay in sync with actual content
  */
 
-import { blogPosts, getAllCategories } from '@/lib/blog-data'
+import { blogPosts } from '@/lib/blog-data'
+import { getAllCategorySlugs } from '@/lib/categories'
 import { siteConfig } from '@/lib/config'
 import type { MetadataRoute } from 'next'
 
@@ -37,10 +38,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
   
-  // Category pages - dynamically generated from blog data
-  const categories = getAllCategories()
-  const categoryUrls = categories.map(category => ({
-    url: `${siteConfig.brand.url}/category/${category.toLowerCase().replace(/\s+/g, '-')}`,
+  // Category pages - dynamically generated from database categories
+  const categorySlugs = getAllCategorySlugs()
+  const categoryUrls = categorySlugs.map(slug => ({
+    url: `${siteConfig.brand.url}/category/${slug}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.7,
