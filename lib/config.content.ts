@@ -22,9 +22,9 @@ export const siteContent: SiteConfigSchema = {
     name: "The Wandering Fam",
     description: "WanderFam transforms family travel into unforgettable luxury and adventure experiences with expertly curated guides, tips, and stories for every journey.",
     url: "https://thewanderingfam.org",
-    logoPath: "/api/uploads/brands/2707c408-c0b4-4710-9c98-af9e0768ec2c/logos/logo-1764607955036.png",
-    faviconPath: "/api/uploads/brands/2707c408-c0b4-4710-9c98-af9e0768ec2c/logos/logo-1764607955036.png",
-    ogImagePath: "/api/uploads/brands/2707c408-c0b4-4710-9c98-af9e0768ec2c/logos/logo-1764607955036.png",
+    logoPath: "/logo.jpg",
+    faviconPath: "/logo.jpg",
+    ogImagePath: "/logo.jpg",
     mainAppUrl: "https://app.thefaceless.ai"
   },
 
@@ -39,7 +39,7 @@ export const siteContent: SiteConfigSchema = {
     name: "The Wandering Fam Team",
     bio: "WanderFam transforms family travel into unforgettable luxury and adventure experiences with expertly curated guides, tips, and stories for every jo...",
     role: "Content Creator",
-    image: "/api/uploads/brands/2707c408-c0b4-4710-9c98-af9e0768ec2c/logos/logo-1764607955036.png"
+    image: "/logo.jpg"
   },
 
   // Section headings throughout the site
