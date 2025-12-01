@@ -14,7 +14,7 @@ export function BlogFooter() {
           <div>
             <div className="mb-4 flex items-center gap-2">
               {siteConfig.brand.logoPath && (
-                <Image src={siteConfig.brand.logoPath} alt="Logo" width={24} height={24} className="size-6" />
+                <Image src={siteConfig.brand.logoPath} alt="Logo" width={100} height={100} className="h-10 w-auto" />
               )}
               <span className="text-lg font-semibold text-foreground">{siteConfig.brand.name}</span>
             </div>
