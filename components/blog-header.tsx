@@ -73,7 +73,7 @@ export function BlogHeader() {
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
             {siteConfig.brand.logoPath && (
-              <Image src={siteConfig.brand.logoPath} alt="Logo" width={32} height={32} className="size-8" />
+              <Image src={siteConfig.brand.logoPath} alt="Logo" width={120} height={120} className="h-12 w-auto" />
             )}
             <span className="text-xl font-semibold text-foreground">{siteConfig.brand.name}</span>
           </Link>
